@@ -32,7 +32,7 @@ export default function AboutPage() {
                   Sigma Master Security Sdn. Bhd. is a leading security provider in Malaysia, established in 2001. We specialize in providing a comprehensive range of security services, including unarmed guards, armed guards, centralized monitoring system (CMS), Nepalese security guards, emergency response team (ERT), security training and consultancy, and K9 unit.
                 </p>
                 <p className="text-gray-600 mb-4 leading-relaxed">
-                  We understand that security is of utmost importance in today's world and therefore, we are committed to providing our clients with the best possible security solutions. Our team of security professionals is highly trained and experienced, ensuring that our clients receive the highest level of protection at all times.
+                  We understand that security is of utmost importance in today{'s'} world and therefore, we are committed to providing our clients with the best possible security solutions. Our team of security professionals is highly trained and experienced, ensuring that our clients receive the highest level of protection at all times.
                 </p>
                 <p className="text-gray-600 leading-relaxed">
                   At Sigma Master Security Sdn. Bhd., we believe in providing customized security solutions to our clients, taking into consideration their unique security requirements. Our approach is to work closely with our clients to understand their needs and provide tailored security solutions that meet their specific needs.

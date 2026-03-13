@@ -67,7 +67,7 @@ export default function HistoryPage() {
                 A Legacy of Protection
               </h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-4">
-                Since our establishment in 2001, Sigma Master Security Sdn. Bhd. has grown from a small security provider to one of Malaysia's trusted names in the security industry. Our journey has been marked by continuous improvement, technological advancement, and an unwavering commitment to protecting our clients.
+                Since our establishment in 2001, Sigma Master Security Sdn. Bhd. has grown from a small security provider to one of Malaysia{'s'} trusted names in the security industry. Our journey has been marked by continuous improvement, technological advancement, and an unwavering commitment to protecting our clients.
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 Over the past 23 years, we have safeguarded critical infrastructure, commercial properties, schools, government institutions, and countless other assets across the nation. Our success is built on our team of highly trained and experienced security professionals.

@@ -192,7 +192,7 @@ export default function CareersPage() {
                   Apply to Join Our Team
                 </h2>
                 <p className="text-white/90">
-                  Fill out the form below and we'll review your application
+                  Fill out the form below and we{'ll'} review your application
                 </p>
               </div>
               <div className="p-8">
@@ -278,7 +278,7 @@ export default function CareersPage() {
                       onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                       rows={4}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-all resize-none"
-                      placeholder="Tell us about yourself and why you're interested in joining Sigma Master Security..."
+                      placeholder="Tell us about yourself and why you{'re'} interested in joining Sigma Master Security..."
                     />
                   </div>
                   <button
