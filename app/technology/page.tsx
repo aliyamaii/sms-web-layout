@@ -45,8 +45,9 @@ export default function TechnologyPage() {
   return (
     <PageLayout>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 opacity-15 bg-[url('https://images.unsplash.com/photo-1550751827-4bd374c3f58?q=80&w=1920')] bg-cover bg-center"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-heading text-4xl lg:text-5xl font-bold mb-6">
               Technology-First Security
@@ -164,7 +165,7 @@ export default function TechnologyPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center bg-white hover:bg-gray-100 text-primary-600 px-10 py-4 rounded-lg font-semibold transition-all transform hover:scale-105"
+              className="inline-flex items-center bg-accent-500 hover:bg-accent-600 text-white px-10 py-4 rounded-lg font-semibold transition-all transform hover:scale-105"
             >
               Request Technology Assessment
               <ArrowRight className="w-5 h-5 ml-2" />

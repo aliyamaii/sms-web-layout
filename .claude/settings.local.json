@@ -4,7 +4,11 @@
       "Bash(npm install:*)",
       "Bash(uipro init:*)",
       "Bash(python extract_pdf_text.py)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(pnpm dev:*)"
     ]
   }
 }

@@ -48,7 +48,7 @@ export default function Footer() {
             <h3 className="font-heading font-semibold text-lg mb-6">Contact Us</h3>
             <ul className="space-y-4">
               <li className="flex items-start space-x-3">
-                <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5 text-accent-500" />
+                <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5 text-gold-400" />
                 <div>
                   <p className="font-medium">Headquarters</p>
                   <p className="text-sm text-white/80">
@@ -59,7 +59,7 @@ export default function Footer() {
                 </div>
               </li>
               <li className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 flex-shrink-0 text-accent-500" />
+                <Phone className="w-5 h-5 flex-shrink-0 text-gold-400" />
                 <div>
                   <p className="font-medium">Phone</p>
                   <a href="tel:+60389663680" className="text-sm text-white/80 hover:text-white transition-colors">
@@ -68,7 +68,7 @@ export default function Footer() {
                 </div>
               </li>
               <li className="flex items-center space-x-3">
-                <Phone className="w-5 h-5 flex-shrink-0 text-accent-500" />
+                <Phone className="w-5 h-5 flex-shrink-0 text-gold-400" />
                 <div>
                   <p className="font-medium">24/7 Support</p>
                   <a href="tel:+601115014294" className="text-sm text-white/80 hover:text-white transition-colors">
@@ -77,7 +77,7 @@ export default function Footer() {
                 </div>
               </li>
               <li className="flex items-center space-x-3">
-                <Mail className="w-5 h-5 flex-shrink-0 text-accent-500" />
+                <Mail className="w-5 h-5 flex-shrink-0 text-gold-400" />
                 <div>
                   <p className="font-medium">Email</p>
                   <a href="mailto:hello@sigmamaster.my" className="text-sm text-white/80 hover:text-white transition-colors">
@@ -93,15 +93,15 @@ export default function Footer() {
             <h3 className="font-heading font-semibold text-lg mb-6">Credentials</h3>
             <div className="grid grid-cols-3 gap-2 mb-6">
               <div className="bg-white/10 rounded p-2 text-center">
-                <Shield className="w-6 h-6 mx-auto mb-1 text-accent-500" />
+                <Shield className="w-6 h-6 mx-auto mb-1 text-gold-400" />
                 <p className="text-xs">ISO 9001</p>
               </div>
               <div className="bg-white/10 rounded p-2 text-center">
-                <Shield className="w-6 h-6 mx-auto mb-1 text-accent-500" />
+                <Shield className="w-6 h-6 mx-auto mb-1 text-gold-400" />
                 <p className="text-xs">TAPA APAC</p>
               </div>
               <div className="bg-white/10 rounded p-2 text-center">
-                <Shield className="w-6 h-6 mx-auto mb-1 text-accent-500" />
+                <Shield className="w-6 h-6 mx-auto mb-1 text-gold-400" />
                 <p className="text-xs">APSA</p>
               </div>
             </div>

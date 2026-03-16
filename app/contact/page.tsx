@@ -34,8 +34,9 @@ export default function ContactPage() {
   return (
     <PageLayout>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 opacity-15 bg-[url('https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1920')] bg-cover bg-center"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-heading text-4xl lg:text-5xl font-bold mb-6">
               Contact Us
@@ -81,7 +82,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="text-gray-600 text-sm mb-1">24/7 Emergency Support:</p>
-                    <a href="tel:+601115014294" className="text-accent-600 font-semibold hover:text-accent-700">
+                    <a href="tel:+601115014294" className="text-gold-600 font-semibold hover:text-gold-700">
                       +60 11-1501 4294
                     </a>
                   </div>
@@ -217,7 +218,7 @@ export default function ContactPage() {
                   </div>
                   <button
                     type="submit"
-                    className="w-full bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-[1.02] flex items-center justify-center space-x-2"
+                    className="w-full bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-lg font-semibold transition-all transform hover:scale-[1.02] flex items-center justify-center space-x-2"
                   >
                     <Send className="w-5 h-5" />
                     <span>Submit Request</span>

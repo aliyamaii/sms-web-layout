@@ -141,7 +141,8 @@ export default function HomePage() {
     <PageLayout>
       {/* Hero Section */}
       <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-32 lg:py-40 overflow-hidden">
-        <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxwYXRoIGQ9Ik0zMCA1N2wwLTQ1LTMwIDBoNDBsMzAgMzBoLTQwIiBmaWxsPSJyZ2JhKDI1NSwgMjU1LDI1NSwgMC4wNSkiLz48L2c+PC9zdmc+')] opacity-10"></div>
+        <div className="absolute inset-0 opacity-20 bg-[url('https://images.unsplash.com/photo-1521791055366-0d553872125f?q=80&w=1920')] bg-cover bg-center"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-primary-600/90 via-primary-700/90 to-primary-800/90"></div>
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-heading text-5xl lg:text-6xl font-bold mb-6 leading-tight">
@@ -231,8 +232,12 @@ export default function HomePage() {
                   </div>
                 </div>
               </div>
-              <div className="bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl p-8 flex items-center justify-center">
-                <Shield className="w-48 h-48 text-primary-600" strokeWidth={1} />
+              <div className="rounded-2xl overflow-hidden shadow-xl">
+                <img
+                  src="https://images.unsplash.com/photo-1521791055366-0d553872125f?q=80&w=800"
+                  alt="Professional security guards team"
+                  className="w-full h-80 object-cover"
+                />
               </div>
             </div>
           </div>
@@ -300,7 +305,7 @@ export default function HomePage() {
               const Icon = point.icon;
               return (
                 <div key={point.title} className="bg-white/10 backdrop-blur-sm rounded-xl p-8 border border-white/20 hover:bg-white/15 transition-all">
-                  <Icon className="w-10 h-10 text-accent-500 mb-4" />
+                  <Icon className="w-10 h-10 text-gold-400 mb-4" />
                   <h3 className="font-heading text-xl font-semibold mb-3">{point.title}</h3>
                   <p className="text-white/90 leading-relaxed">{point.description}</p>
                 </div>
@@ -333,7 +338,7 @@ export default function HomePage() {
                 </div>
                 {index < processSteps.length - 1 && (
                   <div className="hidden md:block absolute top-1/2 -right-4 transform -translate-y-1/2 z-10">
-                    <ArrowRight className="w-8 h-8 text-accent-500" />
+                    <ArrowRight className="w-8 h-8 text-gold-400" />
                   </div>
                 )}
               </div>
@@ -470,11 +475,11 @@ export default function HomePage() {
               </Link>
             </div>
             <div className="mt-10 flex flex-col sm:flex-row gap-6 justify-center text-white/90">
-              <a href="tel:+601115014294" className="flex items-center space-x-2">
+              <a href="tel:+601115014294" className="flex items-center space-x-2 hover:text-gold-300 transition-colors">
                 <Phone className="w-5 h-5" />
                 <span>+60 11-1501 4294 (24/7 Support)</span>
               </a>
-              <a href="mailto:hello@sigmamaster.my" className="flex items-center space-x-2">
+              <a href="mailto:hello@sigmamaster.my" className="flex items-center space-x-2 hover:text-gold-300 transition-colors">
                 <Mail className="w-5 h-5" />
                 <span>hello@sigmamaster.my</span>
               </a>

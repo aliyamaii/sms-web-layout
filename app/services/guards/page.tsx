@@ -45,8 +45,9 @@ export default function GuardsPage() {
   return (
     <PageLayout>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 opacity-15 bg-[url('https://images.unsplash.com/photo-1521791055366-0d553872125f?q=80&w=1920')] bg-cover bg-center"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-heading text-4xl lg:text-5xl font-bold mb-6">
               Security Guard Services
@@ -108,7 +109,7 @@ export default function GuardsPage() {
                             ))}
                           </ul>
                         </div>
-                        <div className="bg-accent-50 p-4 rounded-lg">
+                        <div className="bg-gold-50 p-4 rounded-lg">
                           <h4 className="font-semibold text-gray-900 mb-1">Best For:</h4>
                           <p className="text-gray-600 text-sm">{guard.suitable}</p>
                         </div>

@@ -51,8 +51,9 @@ export default function ServicesPage() {
   return (
     <PageLayout>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 opacity-15 bg-[url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?q=80&w=1920')] bg-cover bg-center"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-heading text-4xl lg:text-5xl font-bold mb-6">
               Our Services
@@ -110,7 +111,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-primary-50">
+      <section className="py-20 bg-gold-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="font-heading text-3xl font-bold text-gray-900 mb-6">
@@ -121,7 +122,7 @@ export default function ServicesPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white px-10 py-4 rounded-lg font-semibold transition-all transform hover:scale-105"
+              className="inline-flex items-center bg-accent-600 hover:bg-accent-700 text-white px-10 py-4 rounded-lg font-semibold transition-all transform hover:scale-105"
             >
               Request Quote
               <ArrowRight className="w-5 h-5 ml-2" />

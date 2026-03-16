@@ -50,8 +50,9 @@ export default function ProcessPage() {
   return (
     <PageLayout>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 opacity-15 bg-[url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1920')] bg-cover bg-center"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-heading text-4xl lg:text-5xl font-bold mb-6">
               Our Process
@@ -68,12 +69,23 @@ export default function ProcessPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="bg-primary-50 border-l-4 border-primary-600 p-8 rounded-r-lg mb-16">
-              <h2 className="font-heading text-3xl font-bold text-gray-900 mb-4">
-                Customized Security Solutions
-              </h2>
-              <p className="text-lg text-gray-700 leading-relaxed">
-                At Sigma Master Security, we believe that one size does not fit all when it comes to security. Our approach is to work closely with our clients to understand their needs and provide tailored security solutions that meet their specific requirements. From listening carefully to client concerns to bringing deep security expertise and legal regulations knowledge, we ensure comprehensive protection.
-              </p>
+              <div className="grid md:grid-cols-2 gap-8 items-center">
+                <div>
+                  <h2 className="font-heading text-3xl font-bold text-gray-900 mb-4">
+                    Customized Security Solutions
+                  </h2>
+                  <p className="text-lg text-gray-700 leading-relaxed">
+                    At Sigma Master Security, we believe that one size does not fit all when it comes to security. Our approach is to work closely with our clients to understand their needs and provide tailored security solutions that meet their specific requirements. From listening carefully to client concerns to bringing deep security expertise and legal regulations knowledge, we ensure comprehensive protection.
+                  </p>
+                </div>
+                <div className="rounded-xl overflow-hidden shadow-lg">
+                  <img
+                    src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=600"
+                    alt="Security planning and strategy"
+                    className="w-full h-64 object-cover"
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -117,7 +129,7 @@ export default function ProcessPage() {
                               ))}
                             </ul>
                           </div>
-                          <div className="inline-block bg-accent-100 text-accent-700 px-4 py-2 rounded-lg font-semibold">
+                          <div className="inline-block bg-gold-100 text-gold-700 px-4 py-2 rounded-lg font-semibold">
                             Duration: {step.duration}
                           </div>
                         </div>
@@ -125,7 +137,7 @@ export default function ProcessPage() {
                     </div>
                     {index < processSteps.length - 1 && (
                       <div className="hidden md:flex justify-center py-8">
-                        <ArrowRight className="w-12 h-12 text-accent-500" />
+                        <ArrowRight className="w-12 h-12 text-gold-500" />
                       </div>
                     )}
                   </div>
@@ -155,9 +167,9 @@ export default function ProcessPage() {
                   We take time to understand your unique security requirements, risks, and objectives before recommending solutions.
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-lg border-t-4 border-accent-500 shadow-sm">
+              <div className="bg-white p-6 rounded-lg border-t-4 border-gold-500 shadow-sm">
                 <div className="flex items-start space-x-4 mb-4">
-                  <Layout className="w-8 h-8 text-accent-500 flex-shrink-0" />
+                  <Layout className="w-8 h-8 text-gold-500 flex-shrink-0" />
                   <h3 className="font-heading text-xl font-semibold text-gray-900">
                     Tailored Solutions
                   </h3>
@@ -177,9 +189,9 @@ export default function ProcessPage() {
                   24/7 CMS monitoring and regular quality checks ensure service excellence at all times.
                 </p>
               </div>
-              <div className="bg-white p-6 rounded-lg border-t-4 border-accent-500 shadow-sm">
+              <div className="bg-white p-6 rounded-lg border-t-4 border-gold-500 shadow-sm">
                 <div className="flex items-start space-x-4 mb-4">
-                  <Shield className="w-8 h-8 text-accent-500 flex-shrink-0" />
+                  <Shield className="w-8 h-8 text-gold-500 flex-shrink-0" />
                   <h3 className="font-heading text-xl font-semibold text-gray-900">
                     Quality Assurance
                   </h3>
@@ -205,7 +217,7 @@ export default function ProcessPage() {
             </p>
             <Link
               href="/contact"
-              className="inline-flex items-center bg-primary-600 hover:bg-primary-700 text-white px-10 py-4 rounded-lg font-semibold transition-all transform hover:scale-105"
+              className="inline-flex items-center bg-accent-500 hover:bg-accent-600 text-white px-10 py-4 rounded-lg font-semibold transition-all transform hover:scale-105"
             >
               Start Your Security Assessment
               <ArrowRight className="w-5 h-5 ml-2" />

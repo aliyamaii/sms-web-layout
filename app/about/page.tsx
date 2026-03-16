@@ -6,8 +6,9 @@ export default function AboutPage() {
   return (
     <PageLayout>
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20">
-        <div className="container mx-auto px-4">
+      <section className="relative bg-gradient-to-br from-primary-600 via-primary-700 to-primary-800 text-white py-20 overflow-hidden">
+        <div className="absolute inset-0 opacity-15 bg-[url('https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=1920')] bg-cover bg-center"></div>
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-heading text-4xl lg:text-5xl font-bold mb-6">
               About Sigma Master Security
@@ -38,8 +39,12 @@ export default function AboutPage() {
                   At Sigma Master Security Sdn. Bhd., we believe in providing customized security solutions to our clients, taking into consideration their unique security requirements. Our approach is to work closely with our clients to understand their needs and provide tailored security solutions that meet their specific needs.
                 </p>
               </div>
-              <div className="bg-gradient-to-br from-primary-100 to-primary-200 rounded-2xl p-8 flex items-center justify-center">
-                <Shield className="w-40 h-40 text-primary-600" strokeWidth={1} />
+              <div className="rounded-2xl overflow-hidden shadow-xl">
+                <img
+                  src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?q=80&w=800"
+                  alt="Corporate office building"
+                  className="w-full h-80 object-cover"
+                />
               </div>
             </div>
 
@@ -64,12 +69,12 @@ export default function AboutPage() {
             </div>
 
             {/* Bumiputera Status */}
-            <div className="bg-accent-50 border-l-4 border-accent-500 p-6 rounded-r-lg mb-16">
+            <div className="bg-gold-50 border-l-4 border-gold-500 p-6 rounded-r-lg mb-16">
               <h3 className="font-heading text-xl font-semibold text-gray-900 mb-2">
                 Bumiputera Company
               </h3>
               <p className="text-gray-600">
-                Sigma Master Security Sdn. Bhd. is proud to be a Bumiputera-owned company, registered with the Companies Commission of Malaysia (SSM) under registration number 200101017930 (553687-W). Our paid-up capital is RM 1,500,000.00.
+                Sigma Master Security Sdn. Bhd. is proud to be a Bumiputera-owned company, registered with the Companies Commission of Malaysia (SSM) under registration number 200101017930 (553687-W).
               </p>
             </div>
           </div>
@@ -89,7 +94,7 @@ export default function AboutPage() {
                 className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all group"
               >
                 <div className="flex items-center space-x-4">
-                  <Target className="w-10 h-10 text-primary-600 group-hover:text-accent-500 transition-colors" />
+                  <Target className="w-10 h-10 text-primary-600 group-hover:text-gold-500 transition-colors" />
                   <div>
                     <h3 className="font-heading font-semibold text-gray-900 mb-1">Vision & Mission</h3>
                     <p className="text-gray-600 text-sm">Our objectives and keys to success</p>
@@ -101,7 +106,7 @@ export default function AboutPage() {
                 className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all group"
               >
                 <div className="flex items-center space-x-4">
-                  <Users className="w-10 h-10 text-primary-600 group-hover:text-accent-500 transition-colors" />
+                  <Users className="w-10 h-10 text-primary-600 group-hover:text-gold-500 transition-colors" />
                   <div>
                     <h3 className="font-heading font-semibold text-gray-900 mb-1">Management Team</h3>
                     <p className="text-gray-600 text-sm">Meet our experienced leadership</p>
@@ -113,7 +118,7 @@ export default function AboutPage() {
                 className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all group"
               >
                 <div className="flex items-center space-x-4">
-                  <Award className="w-10 h-10 text-primary-600 group-hover:text-accent-500 transition-colors" />
+                  <Award className="w-10 h-10 text-primary-600 group-hover:text-gold-500 transition-colors" />
                   <div>
                     <h3 className="font-heading font-semibold text-gray-900 mb-1">Our History</h3>
                     <p className="text-gray-600 text-sm">23 years of security excellence</p>
@@ -125,7 +130,7 @@ export default function AboutPage() {
                 className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-all group"
               >
                 <div className="flex items-center space-x-4">
-                  <Phone className="w-10 h-10 text-primary-600 group-hover:text-accent-500 transition-colors" />
+                  <Phone className="w-10 h-10 text-primary-600 group-hover:text-gold-500 transition-colors" />
                   <div>
                     <h3 className="font-heading font-semibold text-gray-900 mb-1">Contact Us</h3>
                     <p className="text-gray-600 text-sm">Get in touch with our team</p>
